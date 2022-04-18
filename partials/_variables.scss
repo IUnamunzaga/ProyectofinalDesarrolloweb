@@ -1,0 +1,21 @@
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-2($display, $justify-content, $align-items) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;   
+}
+
+$colors: (
+    bg-color: #000000,  
+    color: #f3fbf5f7,    
+)
+
+
+
+
+    

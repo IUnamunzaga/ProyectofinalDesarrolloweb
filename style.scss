@@ -1,3 +1,4 @@
+@import "./partials/variables";
 
 *{
     margin: 0;
@@ -17,13 +18,13 @@ $secondary-colour: #f3fbf5f7;
 
 a{
     text-decoration: none;
-    color: $secondary-colour
+    color: map-get($colors , color);
     
 }
 
 ul{
     list-style: none;
-    color: $secondary-colour;
+    color: map-get($colors , color );
     justify-content: end;
     padding-bottom: 25px;
 }
@@ -46,10 +47,10 @@ main{
 }
 
 .header{
-    background-color: $color-background;
+    background-color: map-get($colors, bg-color );
     padding-bottom: 25px;
         p{
-            color: $secondary-colour;
+            color: map-get($colors, color );
             padding-top: 35px;
             padding-left: 50px;
             font-family: 'Montserrat', sans-serif;
@@ -58,13 +59,12 @@ main{
 }   
 
 .tour-dates{
-    display: flex;
-    justify-content: space-around;
+   @include flex-2 (flex, space-around, center);
         div{
             width: 200px;
             height: 200px;
-            background-color: $secondary-colour;
-            color: $color-background;
+            background-color:map-get($colors, color );
+            color: map-get($colors, bg-color );
             text-align: center; 
             margin-bottom: 50px;
         }
@@ -73,9 +73,8 @@ main{
 
 .h2{
 
-color: $secondary-colour;
-display: flex;
-justify-content: center;
+color: map-get($colors, color );
+@extend %flex;
 margin: 50px;
 }
 
@@ -84,7 +83,7 @@ margin: 50px;
 }
 
 .footer{
-    background-color: $color-background;
+    background-color: map-get($colors, bg-color );
     padding: 30px;
     text-align: end;
     padding-right: 80px;
@@ -128,7 +127,7 @@ video{
 }
 
 .h1-bio{
-    color: $secondary-colour;
+    color: map-get($colors, color );
     text-align: center;
     margin: 40px;
 }
@@ -144,7 +143,7 @@ video{
 }
 
 p{
-    color: $secondary-colour;
+    color: map-get($colors, color );
 
     font-size: 16px 
 }
@@ -155,7 +154,7 @@ p{
 
 .h1-media{
     text-align: center;
-    color: $secondary-colour;
+    color: map-get($colors, color );
     margin: 30px;
     
 }
@@ -168,7 +167,7 @@ margin-top: 50px;
 
 .form{
     margin: 50px;
-    color: $secondary-colour
+    color: map-get($colors, color )
 }
     
 
