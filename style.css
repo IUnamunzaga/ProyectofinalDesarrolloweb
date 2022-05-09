@@ -24,11 +24,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: #f3fbf5f7;
-}
-
 ul {
   list-style: none;
   color: #f3fbf5f7;
@@ -175,10 +170,33 @@ p {
 .contact-links {
   margin-left: 50px;
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links-divs {
+  width: 150px;
+  height: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
 }
 
 .form {
   margin: 50px;
+  color: #f3fbf5f7;
+}
+
+a {
+  text-decoration: none;
   color: #f3fbf5f7;
 }
 /*# sourceMappingURL=style.css.map */
